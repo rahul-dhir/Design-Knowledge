@@ -4,20 +4,19 @@ SRP means a single class should handle only a single functionality.
 
 For example, the class below does multiple responsibilties.
 
- public static PresetsManager Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    presetsTree = PresetsTree.Instance;
-                    instance = new PresetsManager();
-                    LoadCfgs();
-
-                }
-                return instance;
-            }
-        }
+public static PresetsManager Instance
+{
+     get
+      {
+          if (instance == null)
+          {
+              presetsTree = PresetsTree.Instance;
+              instance = new PresetsManager();
+              LoadCfgs();
+           }
+          return instance;
+      }
+}
         
    
 LoadCfgs()
